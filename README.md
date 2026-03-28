@@ -28,40 +28,53 @@ It demonstrates secure authentication, relational database design, RESTful API d
 ---
 
 ## 🗂️ Project Structure
+
+```
 project-root/
-├── backend/          # CodeIgniter 4 REST API
+├── backend/          # CodeIgniter 4 API
 ├── frontend/         # React Application
 ├── database/
 │   └── database.sql  # Database export file
-└── README.md         # Documentation
-
+└── README.md         # Project documentation
+```
 ---
 
 ## ⚙️ Setup Instructions
 
 ### 🔹 Backend Setup (CodeIgniter 4)
-cd backend  
-composer install  
-cp env .env  
-php spark serve  
 
-Backend URL: http://localhost:8080
+```bash
+cd backend
+composer install
+cp env .env   # configure DB inside .env
+php spark serve
+```
+
+Backend will run at:
+http://localhost:8080
 
 ---
 
 ### 🔹 Frontend Setup (React)
-cd frontend  
-npm install  
-npm start  
 
-Frontend URL: http://localhost:3000
+```bash
+cd frontend
+npm install
+npm start
+```
+
+Frontend will run at:
+http://localhost:3000
 
 ---
 
 ### 🔹 Database Setup
-1. Open phpMyAdmin / MySQL Workbench  
-2. Create a database (e.g., auth_app)  
-3. Import: database/database.sql  
+1. Open phpMyAdmin or MySQL client
+2. Create a new database (e.g., auth_app)
+3. Import:
+```
+database/database.sql
+```
 
 ---
 
@@ -116,13 +129,14 @@ Frontend URL: http://localhost:3000
 ---
 
 ## 🎯 Task Completion
-✔ Backend (CodeIgniter)  
-✔ Auth APIs  
-✔ JWT authentication  
-✔ Relational DB  
-✔ Single API (dual insert)  
-✔ React frontend  
-✔ Data tables  
+All requirements from the internship task have been successfully implemented:
+- CodeIgniter backend ✔
+- Auth APIs ✔
+- JWT authentication ✔
+- Relational database ✔
+- Single API for dual table insert ✔
+- React frontend ✔
+- Data tables ✔
 
 ---
 
