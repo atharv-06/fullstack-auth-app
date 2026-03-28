@@ -1,8 +1,8 @@
-# Full Stack Authentication Application
+# 🚀 Full Stack Authentication Application
 
 ## 📌 Overview
-This project is a full-stack authentication system built as part of an internship task.  
-It demonstrates secure user authentication, relational database design, and a clean React-based UI.
+This project is a full-stack authentication system developed as part of an internship task.  
+It demonstrates secure authentication, relational database design, RESTful API development, and a clean, user-friendly React interface.
 
 ---
 
@@ -14,126 +14,115 @@ It demonstrates secure user authentication, relational database design, and a cl
 
 ---
 
-## 🚀 Features
-- User Registration (data stored across two related tables)
-- Secure Login with password hashing
-- JWT-based authentication
-- Protected API routes
-- Dashboard after login
-- Users & Teachers data tables
-- Search functionality in tables
-- Responsive and minimal UI
+## ✨ Key Features
+- 🔐 User Registration & Login
+- 🔑 Secure password hashing
+- 🛡️ JWT-based authentication
+- 🚫 Protected API routes
+- 📊 Dashboard after login
+- 📋 Users & Teachers data tables
+- 🔍 Search functionality
+- ⚡ Loading & error handling
+- 📱 Responsive & clean UI
 
 ---
 
 ## 🗂️ Project Structure
-```
 project-root/
-├── backend/          # CodeIgniter 4 API
+├── backend/          # CodeIgniter 4 REST API
 ├── frontend/         # React Application
 ├── database/
 │   └── database.sql  # Database export file
-└── README.md         # Project documentation
-```
+└── README.md         # Documentation
 
 ---
 
 ## ⚙️ Setup Instructions
 
-### 🔹 Backend Setup (CodeIgniter)
-```bash
-cd backend
-composer install
-cp env .env   # configure DB inside .env
-php spark serve
-```
+### 🔹 Backend Setup (CodeIgniter 4)
+cd backend  
+composer install  
+cp env .env  
+php spark serve  
 
-Backend will run at:
-http://localhost:8080
+Backend URL: http://localhost:8080
 
 ---
 
 ### 🔹 Frontend Setup (React)
-```bash
-cd frontend
-npm install
-npm start
-```
+cd frontend  
+npm install  
+npm start  
 
-Frontend will run at:
-http://localhost:3000
+Frontend URL: http://localhost:3000
 
 ---
 
 ### 🔹 Database Setup
-1. Open phpMyAdmin or MySQL client
-2. Create a new database (e.g., auth_app)
-3. Import:
-```
-database/database.sql
-```
+1. Open phpMyAdmin / MySQL Workbench  
+2. Create a database (e.g., auth_app)  
+3. Import: database/database.sql  
 
 ---
 
-## 🔐 Authentication Flow
-1. User registers → data saved in `auth_user` and `teachers`
-2. User logs in → receives JWT token
-3. Token stored in localStorage
-4. Protected routes use `Authorization: Bearer <token>`
+## 🔐 Authentication Workflow
+1. User registers → data stored in auth_user & teachers  
+2. User logs in → receives JWT token  
+3. Token stored in localStorage  
+4. Used in headers: Authorization: Bearer <token>  
 
 ---
 
-## 📊 API Endpoints
+## 📡 API Endpoints
 
-### 🔹 Auth
-- `POST /register` → Register new user
-- `POST /login` → Login and receive token
+### 🔹 Authentication APIs
+- POST /register  
+- POST /login  
 
-### 🔹 Protected
-- `GET /dashboard` → Access dashboard
-- `GET /users` → Fetch users list
-- `GET /teachers` → Fetch teachers list
+### 🔹 Protected APIs
+- GET /dashboard  
+- GET /users  
+- GET /teachers  
 
 ---
 
 ## 🧩 Database Design
 
 ### auth_user
-- id (Primary Key)
-- email
-- first_name
-- last_name
-- password
+- id  
+- email  
+- first_name  
+- last_name  
+- password  
 
 ### teachers
-- id (Primary Key)
-- user_id (Foreign Key)
-- university_name
-- gender
-- year_joined
+- id  
+- user_id  
+- university_name  
+- gender  
+- year_joined  
 
-👉 One-to-One relationship between tables
+👉 One-to-One relationship
 
 ---
 
 ## 🎨 UI Highlights
-- Minimal and clean design
-- Loading states
-- Error handling
-- Search functionality
-- Responsive layout using Tailwind CSS
+- Minimal and modern design  
+- Smooth UX  
+- Loading states  
+- Search functionality  
+- Responsive layout  
 
 ---
 
 ## 🎯 Task Completion
-All requirements from the internship task have been successfully implemented:
-- CodeIgniter backend ✔
-- Auth APIs ✔
-- JWT authentication ✔
-- Relational database ✔
-- Single API for dual table insert ✔
-- React frontend ✔
-- Data tables ✔
+✔ Backend (CodeIgniter)  
+✔ Auth APIs  
+✔ JWT authentication  
+✔ Relational DB  
+✔ Single API (dual insert)  
+✔ React frontend  
+✔ Data tables  
 
 ---
 
